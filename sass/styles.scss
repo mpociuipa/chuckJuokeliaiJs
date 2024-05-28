@@ -1,0 +1,94 @@
+$primary-color: #ff6347;
+
+.header {
+    background-color: $primary-color;
+    .menu {
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+        background-color: darken($primary-color, 10%);
+        a {
+            color: white;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.main {
+    padding: 1rem;
+    .search {
+        &__form {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+        }
+        &__input, &__select, &__button {
+            margin-top: 0.5rem;
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+    }
+    .jokes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        .joke {
+            border: 1px solid #ccc;
+            padding: 1rem;
+            button {
+                margin-top: 1rem;
+                padding: 0.5rem;
+                background-color: $primary-color;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        .jokes {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+// sass/styles.scss
+
+// Sukurti mygtukų pagrindinius stilius
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+// Pagrindinio mygtuko spalvos
+.button--primary {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+
+    &:hover {
+        background-color: #0056b3;
+    }
+}
+
+// Antrinio mygtuko spalvos
+.button--secondary {
+    background-color: #6c757d;
+    color: white;
+    border: 1px solid #6c757d;
+
+    &:hover {
+        background-color: #5a6268;
+    }
+}

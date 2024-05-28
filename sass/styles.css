@@ -1,0 +1,81 @@
+.header {
+  background-color: #ff6347;
+}
+.header .menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  background-color: #ff3814;
+}
+.header .menu a {
+  color: white;
+  text-decoration: none;
+}
+.header .menu a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  padding: 1rem;
+}
+.main .search__form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.main .search__input, .main .search__select, .main .search__button {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.main .jokes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.main .jokes .joke {
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+.main .jokes .joke button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .main .jokes {
+    grid-template-columns: 1fr;
+  }
+}
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.button--primary {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+}
+.button--primary:hover {
+  background-color: #0056b3;
+}
+
+.button--secondary {
+  background-color: #6c757d;
+  color: white;
+  border: 1px solid #6c757d;
+}
+.button--secondary:hover {
+  background-color: #5a6268;
+}/*# sourceMappingURL=styles.css.map */

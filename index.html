@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuck Norris Jokes</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="menu">
+            <a href="index.html" class="button button--primary">Home</a>
+            <a href="saved_jokes.html" class="button button--secondary">Joke List</a>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="search">
+            <h1>Find Chuck Norris Jokes</h1>
+            <form class="search__form">
+                <label for="category">Category:</label>
+                <select id="category" name="category" class="search__select">
+                    <!-- Categories will be populated dynamically -->
+                </select>
+                <label for="search-term">Or Search Term:</label>
+                <input type="text" id="search-term" name="search-term" class="search__input">
+                <button type="submit" class="search__button">Search</button>
+            </form>
+        </section>
+        <section class="jokes" id="jokes">
+            <!-- Jokes will be displayed here -->
+        </section>
+    </main>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
